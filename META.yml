@@ -1,6 +1,6 @@
 ---
 name: Catalyst-Plugin-Unicode
-version: 0.1
+version: 0.2
 author:
   - |-
     Christian Hansen, C<ch@ngmedia.com>
@@ -10,5 +10,5 @@ license: perl
 provides:
   Catalyst::Plugin::Unicode:
     file: lib/Catalyst/Plugin/Unicode.pm
-    version: 0.1
+    version: 0.2
 generated_by: Module::Build version 0.26
