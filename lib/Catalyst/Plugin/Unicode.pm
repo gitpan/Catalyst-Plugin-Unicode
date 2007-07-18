@@ -2,7 +2,7 @@ package Catalyst::Plugin::Unicode;
 
 use strict;
 
-our $VERSION = '0.3';
+our $VERSION = '0.4';
 
 sub finalize {
     my $c = shift;

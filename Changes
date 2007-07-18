@@ -1,5 +1,8 @@
 Revision history for Perl extension Catalyst::Plugin::Unicode
 
+0.4  Tue Jul 18 18:21:00 2007
+	- Fix release fuckup
+
 0.3  Tue Jun 5 16:35:00 2007
         - Change to Module::Install
 
