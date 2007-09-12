@@ -1,10 +1,13 @@
 Revision history for Perl extension Catalyst::Plugin::Unicode
 
+0.6  Wed Sep 12 04:08:29 CDT 2007
+        - Properly encode bodies that aren't text/* (like XML)
+
 0.5  Tue Jul 18 18:21:00 2007
         -  Messed up META.yml
 
 0.4  Tue Jul 18 18:21:00 2007
-        - Fix release fuckup
+	- Fix release fuckup
 
 0.3  Tue Jun 5 16:35:00 2007
         - Change to Module::Install

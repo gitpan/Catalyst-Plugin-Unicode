@@ -2,26 +2,16 @@ package Catalyst::Plugin::Unicode;
 
 use strict;
 
-our $VERSION = '0.5';
+our $VERSION = '0.6';
 
 sub finalize {
     my $c = shift;
-
-    unless ( $c->response->body ) {
-        return $c->NEXT::finalize;
+    
+    if ( $c->response->{body} && utf8::is_utf8($c->response->{body}) ){
+        utf8::encode( $c->response->{body} );
     }
-
-    unless ( $c->response->content_type =~ /^text/ ) {
-        return $c->NEXT::finalize;
-    }
-
-    unless ( utf8::is_utf8( $c->response->body ) ) {
-        return $c->NEXT::finalize;
-    }
-
-    utf8::encode( $c->response->{body} );
-
-    $c->NEXT::finalize;
+    
+    return $c->NEXT::finalize;
 }
 
 sub prepare_parameters {

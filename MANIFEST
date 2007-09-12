@@ -17,3 +17,9 @@ META.yml
 t/01use.t
 t/02pod.t
 t/03podcoverage.t
+t/lib/Makefile.PL
+t/lib/script/testapp_server.pl
+t/lib/script/testapp_test.pl
+t/lib/TestApp.pm
+t/lib/TestApp/Controller/Root.pm
+t/live-test.t
