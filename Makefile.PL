@@ -8,6 +8,7 @@ requires 'Test::More';
 
 build_requires 'Test::WWW::Mechanize::Catalyst';
 build_requires 'IO::Scalar';
+build_requires 'ok';
 
 auto_install;
 WriteAll;

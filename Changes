@@ -1,5 +1,8 @@
 Revision history for Perl extension Catalyst::Plugin::Unicode
 
+0.7  Wed Sep 12 23:58:37 CDT 2007
+        - add ok.pm to prereqs
+
 0.6  Wed Sep 12 04:08:29 CDT 2007
         - Properly encode bodies that aren't text/* (like XML)
 
