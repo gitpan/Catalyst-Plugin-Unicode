@@ -1,14 +1,22 @@
----
-name: Catalyst-Plugin-Unicode
-version: 0.2
-author:
-  - |-
-    Christian Hansen, C<ch@ngmedia.com>
-    Marcus Ramberg, C<mramberg@pcan.org>
+--- 
 abstract: Unicode aware Catalyst
+author: Jonathan Rockway <jrockway@cpan.org>
+build_requires: 
+  IO::Scalar: 0
+  Test::More: 0
+  Test::WWW::Mechanize::Catalyst: 0
+  ok: 0
+distribution_type: module
+generated_by: Module::Install version 0.67
 license: perl
-provides:
-  Catalyst::Plugin::Unicode:
-    file: lib/Catalyst/Plugin/Unicode.pm
-    version: 0.2
-generated_by: Module::Build version 0.26
+meta-spec: 
+  url: http://module-build.sourceforge.net/META-spec-v1.3.html
+  version: 1.3
+name: Catalyst-Plugin-Unicode
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Catalyst::Runtime: 5.70
+version: 0.8

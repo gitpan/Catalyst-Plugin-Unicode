@@ -1,5 +1,8 @@
 Revision history for Perl extension Catalyst::Plugin::Unicode
 
+0.8  Tue Sep 25 12:31:02 CDT 2007
+        - fix META.yml again :)
+
 0.7  Wed Sep 12 23:58:37 CDT 2007
         - add ok.pm to prereqs
 

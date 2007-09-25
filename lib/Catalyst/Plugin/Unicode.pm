@@ -2,7 +2,7 @@ package Catalyst::Plugin::Unicode;
 
 use strict;
 
-our $VERSION = '0.7';
+our $VERSION = '0.8';
 
 sub finalize {
     my $c = shift;
@@ -65,10 +65,13 @@ Decodes parameters into a sequence of logical characters.
 
 L<utf8>, L<Catalyst>.
 
-=head1 AUTHOR
+=head1 AUTHORS
 
-Christian Hansen, C<ch@ngmedia.com>
-Marcus Ramberg, C<mramberg@pcan.org>
+Christian Hansen, C<< <ch@ngmedia.com> >>
+
+Marcus Ramberg, C<< <mramberg@pcan.org> >>
+
+Jonathan Rockway C<< <jrockway@cpan.org> >>
 
 =head1 LICENSE
 
