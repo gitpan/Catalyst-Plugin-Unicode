@@ -1,22 +1,26 @@
---- 
-abstract: Unicode aware Catalyst
-author: Jonathan Rockway <jrockway@cpan.org>
-build_requires: 
+---
+abstract: 'Unicode aware Catalyst'
+author:
+  - 'Jonathan Rockway <jrockway@cpan.org>'
+build_requires:
   IO::Scalar: 0
   Test::More: 0
   Test::WWW::Mechanize::Catalyst: 0
   ok: 0
 distribution_type: module
-generated_by: Module::Install version 0.67
+generated_by: 'Module::Install version 0.77'
 license: perl
-meta-spec: 
-  url: http://module-build.sourceforge.net/META-spec-v1.3.html
-  version: 1.3
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: Catalyst-Plugin-Unicode
-no_index: 
-  directory: 
+no_index:
+  directory:
     - inc
     - t
-requires: 
+requires:
   Catalyst::Runtime: 5.70
-version: 0.8
+  MRO::Compat: 0.10
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.9

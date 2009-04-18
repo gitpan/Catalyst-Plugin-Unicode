@@ -8,11 +8,12 @@ author 'Marcus Ramberg <mramberg@pcan.org>';
 author 'Jonathan Rockway <jrockway@cpan.org>';
 
 requires 'Catalyst::Runtime' => '5.70';
+requires 'MRO::Compat' => '0.10';
 
-build_requires 'Test::More';
-build_requires 'Test::WWW::Mechanize::Catalyst';
-build_requires 'IO::Scalar';
-build_requires 'ok';
+test_requires 'Test::More';
+test_requires 'Test::WWW::Mechanize::Catalyst';
+test_requires 'IO::Scalar';
+test_requires 'ok';
 
 auto_install;
 WriteAll;

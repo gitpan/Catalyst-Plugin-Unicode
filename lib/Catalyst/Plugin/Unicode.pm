@@ -2,7 +2,9 @@ package Catalyst::Plugin::Unicode;
 
 use strict;
 
-our $VERSION = '0.8';
+use MRO::Compat;
+
+our $VERSION = '0.9';
 
 sub finalize {
     my $c = shift;
@@ -11,13 +13,13 @@ sub finalize {
         utf8::encode( $c->response->{body} );
     }
     
-    return $c->NEXT::finalize;
+    return $c->next::method(@_);
 }
 
 sub prepare_parameters {
     my $c = shift;
 
-    $c->NEXT::prepare_parameters;
+    $c->next::method(@_);
 
     for my $value ( values %{ $c->request->{parameters} } ) {
 

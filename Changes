@@ -1,5 +1,9 @@
 Revision history for Perl extension Catalyst::Plugin::Unicode
 
+0.9  XXX
+        - Makefile.PL: build_requires => test_requires (RT #37960)
+        - Switch to MRO::Compat
+
 0.8  Tue Sep 25 12:31:02 CDT 2007
         - fix META.yml again :)
 
@@ -13,7 +17,7 @@ Revision history for Perl extension Catalyst::Plugin::Unicode
         -  Messed up META.yml
 
 0.4  Tue Jul 18 18:21:00 2007
-	- Fix release fuckup
+	    - Fix release fuckup
 
 0.3  Tue Jun 5 16:35:00 2007
         - Change to Module::Install
