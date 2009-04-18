@@ -1,6 +1,8 @@
 Revision history for Perl extension Catalyst::Plugin::Unicode
 
-0.9  XXX
+0.91 Sat Apr 18 23:47:00 GMT 2009
+        - Fix manifest failure
+0.9  Sat Apr 18 11:47:00 GMT 2009
         - Makefile.PL: build_requires => test_requires (RT #37960)
         - Switch to MRO::Compat
 

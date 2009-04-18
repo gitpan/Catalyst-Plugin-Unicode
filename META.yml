@@ -23,4 +23,4 @@ requires:
   MRO::Compat: 0.10
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.9
+version: 0.91

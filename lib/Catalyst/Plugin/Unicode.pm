@@ -4,7 +4,7 @@ use strict;
 
 use MRO::Compat;
 
-our $VERSION = '0.9';
+our $VERSION = '0.91';
 
 sub finalize {
     my $c = shift;
