@@ -4,15 +4,15 @@ use strict;
 
 use MRO::Compat;
 
-our $VERSION = '0.91';
+our $VERSION = '0.92';
 
 sub finalize {
     my $c = shift;
-    
+
     if ( $c->response->{body} && utf8::is_utf8($c->response->{body}) ){
         utf8::encode( $c->response->{body} );
     }
-    
+
     return $c->next::method(@_);
 }
 
@@ -46,8 +46,19 @@ Catalyst::Plugin::Unicode - Unicode aware Catalyst
 
 =head1 DESCRIPTION
 
-On request, decodes all params from UTF-8 octets into a sequence of 
+On request, decodes all params from UTF-8 octets into a sequence of
 logical characters. On response, encodes body into UTF-8 octets.
+
+Note that this plugin tries to autodetect if your response is encoded into
+characters before trying to encode it into a byte stream. This is bad
+as sometimes it can guess wrongly and cause problems.
+
+As an example, latin1 characters such as é (e-accute) will not actually
+cause the output to be encoded as utf8.
+
+Using L<Catalyst::Plugin::Unicode::Encoding> is more recommended, but that
+requires that all data inputs have correctly been decoded into perl's
+internal character representation.
 
 =head1 OVERLOADED METHODS
 
@@ -75,9 +86,11 @@ Marcus Ramberg, C<< <mramberg@pcan.org> >>
 
 Jonathan Rockway C<< <jrockway@cpan.org> >>
 
+Tomas Doran, (t0m) C<< <bobtfish@bobtfish.net> >>
+
 =head1 LICENSE
 
-This library is free software . You can redistribute it and/or modify 
+This library is free software . You can redistribute it and/or modify
 it under the same terms as perl itself.
 
 =cut
