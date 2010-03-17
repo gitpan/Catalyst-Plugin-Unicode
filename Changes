@@ -1,5 +1,9 @@
 Revision history for Perl extension Catalyst::Plugin::Unicode
 
+0.93 Wed Mar 17 22:35:00 GMT 2010
+        - Make the documentation be phrased much more strongly
+          about how this is not the preferred unicode module.
+
 0.92 Sun Oct  4 18:30:00 GMT 2009
         - Add documentation note that you probably want to use
           Catalyst::Plugin::Unicode::Encoding

@@ -9,8 +9,8 @@ BEGIN {
 
 # Suspend handler for "redefined" warnings
 BEGIN {
-	my $w = $SIG{__WARN__};
-	$SIG{__WARN__} = sub { $w };
+#	my $w = $SIG{__WARN__};
+#	$SIG{__WARN__} = sub { $w };
 }
 
 #line 42
@@ -70,7 +70,7 @@ sub DESTROY {}
 
 # Restore warning handler
 BEGIN {
-	$SIG{__WARN__} = $SIG{__WARN__}->();
+#	$SIG{__WARN__} = $SIG{__WARN__}->();
 }
 
 1;

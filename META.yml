@@ -1,5 +1,5 @@
 ---
-abstract: 'Unicode aware Catalyst'
+abstract: 'Unicode aware Catalyst (old style)'
 author:
   - 'Tomas Doran <bobtfish@bobtfish.net>'
 build_requires:
@@ -27,4 +27,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://dev.catalyst.perl.org/repos/Catalyst/trunk/Catalyst-Plugin-Unicode/
-version: 0.92
+version: 0.93
